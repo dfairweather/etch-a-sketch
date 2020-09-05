@@ -25,6 +25,12 @@ colorbtn.forEach((btn) => {
     });   
 });
 
+container.addEventListener("touchstart", () => {
+    if (isDrawing === false) {
+        isDrawing = true;
+    }
+});
+
 
 function drawn(e) {
     if (isDrawing === true && isCrazy === false) {
@@ -38,7 +44,7 @@ function drawn(e) {
 
 function clearSquares() {
     const squares = document.querySelectorAll('#square');
-    gridSize = prompt('How many squares would you like to make per side?');
+    gridSize = prompt('How many squares would you like to make per side? (25 default)');
     squares.forEach((square) => {
         square.classList.remove('drawn');
         container.removeChild(square);
@@ -72,7 +78,7 @@ function createSquares(gridSize) {
         square.style.gridColumn = col / colEnd;
         square.style.gridRow = row / rowEnd;
         square.addEventListener('mouseover', drawn);
-        
+        square.addEventListener('touchstart', drawn);
         container.appendChild(square);
     };
 };

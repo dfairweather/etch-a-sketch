@@ -6,8 +6,8 @@ body {
 #container {
     background: white;
     display: grid;
-    height: 800px;
-    width: 800px;
+    height: 600px;
+    width: 600px;
     margin: auto;
     margin-top: 20px;
     border: 2px solid gray;
@@ -44,11 +44,11 @@ body {
 
 @media(max-width: 768px){
     #container {
-        height: 400px;
-        width: 400px;
+        height: 350px;
+        width: 350px;
     }
 
     #color-selector {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
