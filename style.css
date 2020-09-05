@@ -1,13 +1,13 @@
 body {
     background: lightgoldenrodyellow;
-    font:30px/1.5 Arial, Helvetica, sans-serif;
+    font:20px/1.5 Arial, Helvetica, sans-serif;
 }
 
 #container {
     background: white;
     display: grid;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     margin: auto;
     margin-top: 20px;
     border: 2px solid gray;
